@@ -45,13 +45,13 @@ module.exports = {
   // override the messages, defaults are as follows
   prompts: {
     type: {
-      description: "Select the type of change you are committing:",
+      description: "Select the type of change you addddre committing:",
       type: "list",
       choices: module.exports.types,
     },
     scope: {
       description:
-        "What is the scope of this change (e.g., component or file name)?",
+        "What is the scope of this change (e.g., component or file namdddde)?",
       type: "input",
     },
     ticket: {
@@ -68,7 +68,7 @@ module.exports = {
     },
   },
 
-  allowCustomScopes: true,
+  allowCustomScopes: false,
   allowBreakingChanges: ["feat", "fix"],
 
   // limit subject length
