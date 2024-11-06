@@ -51,12 +51,12 @@ module.exports = {
     subject: "Write a SHORT, IMPERATIVE tense description of the change:\n",
     body: 'Provide a LONGER description of the change (optional). Use "|" to break new line:\n',
     breaking: "List any BREAKING CHANGES (optional):\n",
-    footer:
-      "List any ISSUES CLOSED by this change (optional). E.g.: RPMS-31, RPMS-34:\n",
     ticket_time: {
       description: "Enter ticket time (optional). E.g 2h 30m:",
       type: "input",
     },
+    footer:
+      "List any ISSUES CLOSED by this change (optional). E.g.: RPMS-31dd, RPMS-34:\n",
     confirmCommit: "Are you sure you want to proceed with the commit above?",
   },
 
