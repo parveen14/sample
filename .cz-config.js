@@ -56,6 +56,8 @@ module.exports = {
       "List any ISSUES CLOSED by this change (optional). E.g.: RPMS-31dd, RPMS-34:\n",
     confirmCommit: "Are you sure you want to proceed with the commit above?",
   },
+  message:
+    "{{type}}({{scope}}): {{ticket}} {{message}}{{ticket_time ? ' ' + ticket_time : ''}}",
 
   allowCustomScopes: true,
   allowBreakingChanges: ["feat", "fix"],
