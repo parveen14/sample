@@ -61,6 +61,9 @@ module.exports = {
       type: "input",
       name: "ticketTime",
       message: "Time spent on this ticket (in hours):",
+      when(answers) {
+        return answers.scope === "custom";
+      },
     },
   ],
   allowCustomScopes: false,
