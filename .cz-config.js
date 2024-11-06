@@ -54,9 +54,13 @@ module.exports = {
     footer:
       "List any ISSUES CLOSED by this change (optional). E.g.: RPMS-31, RPMS-34:\n",
     confirmCommit: "Are you sure you want to proceed with the commit above?",
+    ticket_time: {
+      description: "Enter ticket time (e.g., 2h 30m):",
+      type: "input",
+    },
   },
 
-  allowCustomScopes: false,
+  allowCustomScopes: true,
   allowBreakingChanges: ["feat", "fix"],
 
   // limit subject length
