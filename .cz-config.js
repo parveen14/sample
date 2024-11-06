@@ -38,23 +38,34 @@ module.exports = {
   ],
 
   appendBranchNameToCommitMessage: false,
-  allowTicketNumber: true,
-  isTicketNumberRequired: true,
+  allowTicketNumber: false,
+  isTicketNumberRequired: false,
   ticketNumberPrefix: "Fixes - ",
 
   // override the messages, defaults are as follows
-  prompt: {
-    type: "Select the type of change that you're committing:",
-    scope: "Denote the SCOPE of this change:",
-    // used if allowCustomScopes is true
-    customScope: "Denote the SCOPE of this change:",
-    subject: "Write a SHORT, IMPERATIVE tense description of the change:\n",
-    body: 'Provide a LONGER description of the change (optional). Use "|" to break new line:\n',
-    breaking: "List any BREAKING CHANGES (optional):\n",
-    ticket_time: "Enter ticket time (optional). E.g 2h 30m:",
-    footer:
-      "List any ISSUES CLOSED by this change (optional). E.g.: RPMS-31dd, RPMS-34:\n",
-    confirmCommit: "Are you sure you want to proceed with the commit above?",
+  prompts: {
+    type: {
+      description: "Select the type of change you are committing:",
+      type: "list",
+      choices: module.exports.types,
+    },
+    scope: {
+      description:
+        "What is the scope of this change (e.g., component or file name)?",
+      type: "input",
+    },
+    ticket: {
+      description: "Enter ticket number:",
+      type: "input",
+    },
+    message: {
+      description: "Write a short description of the change:",
+      type: "input",
+    },
+    ticket_time: {
+      description: 'Enter ticket time (e.g., "2h 30m") (optional):',
+      type: "input",
+    },
   },
 
   allowCustomScopes: true,
