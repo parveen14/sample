@@ -39,7 +39,7 @@ module.exports = {
 
   appendBranchNameToCommitMessage: false,
   allowTicketNumber: false,
-  isTicketNumberRequired: false,
+  isTicketNumberRequired: true,
   ticketNumberPrefix: "Fixes - ",
 
   // override the messages, defaults are as follows
@@ -53,11 +53,11 @@ module.exports = {
     breaking: "List any BREAKING CHANGES (optional):\n",
     footer:
       "List any ISSUES CLOSED by this change (optional). E.g.: RPMS-31, RPMS-34:\n",
-    confirmCommit: "Are you sure you want to proceed with the commit above?",
     ticket_time: {
-      description: "Enter ticket time (e.g., 2h 30m):",
+      description: "Enter ticket time (optional). E.g 2h 30m:",
       type: "input",
     },
+    confirmCommit: "Are you sure you want to proceed with the commit above?",
   },
 
   allowCustomScopes: true,
