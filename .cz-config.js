@@ -62,7 +62,6 @@ module.exports = {
       name: "ticketTime",
       message: "Time spent on this ticket (in hours):",
     },
-    // ... other interactive questions
   ],
   allowCustomScopes: false,
   allowBreakingChanges: ["feat", "fix"],
