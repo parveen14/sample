@@ -53,7 +53,7 @@ module.exports = {
     breaking: "List any BREAKING CHANGES (optional):\n",
     footer: "Time spent on this ticket (in hours)",
     footer:
-      "List any ISSUES CLOSED by this change (optional). E.g.: RPMS-31, RPMS-34:\n",
+      "List any ISSUES CLOSED by this change (optional). E.g.: RPMS-3551, RPMS-34:\n",
     confirmCommit: "Are you sure you want to proceed with the commit above?",
   },
 
