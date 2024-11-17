@@ -63,12 +63,6 @@ module.exports = {
       message: "Time spent (i.e. 1h 15m) (optional):\n",
       mapping: "#time",
     },
-    {
-      type: "input",
-      name: "comment",
-      message: "Jira comment (optional):\n",
-      mapping: "#comment",
-    },
   ],
   allowCustomScopes: false,
   allowBreakingChanges: ["feat", "fix"],
