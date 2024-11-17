@@ -56,14 +56,18 @@ module.exports = {
     confirmCommit: "Are you sure you want to proceed with the commit above?",
   },
 
-  questions: [
+  additionalQuestions: [
     {
       type: "input",
-      name: "ticketTime",
-      message: "Time spent on this ticket (in hours):",
-      when(answers) {
-        return answers.scope === "custom";
-      },
+      name: "time",
+      message: "Time spent (i.e. 1h 15m) (optional):\n",
+      mapping: "#time",
+    },
+    {
+      type: "input",
+      name: "comment",
+      message: "Jira comment (optional):\n",
+      mapping: "#comment",
     },
   ],
   allowCustomScopes: false,
