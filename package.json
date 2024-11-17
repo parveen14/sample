@@ -13,12 +13,13 @@
     "@commitlint/config-conventional": "^19.5.0",
     "commitizen": "^4.3.1",
     "cz-conventional-changelog": "^3.3.0",
-    "cz-customizable": "^7.2.1",
+    "cz-customizable": "github:parveen14/cz-customizable",
     "husky": "^9.1.6"
   },
   "husky": {
     "hooks": {
-      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"    }
+      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
+    }
   },
   "config": {
     "commitizen": {
