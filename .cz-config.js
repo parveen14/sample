@@ -55,15 +55,6 @@ module.exports = {
       "List any ISSUES CLOSED by this change (optional). E.g.: RPMS-31, RPMS-34:\n",
     confirmCommit: "Are you sure you want to proceed with the commit above?",
   },
-
-  additionalQuestions: [
-    {
-      type: "input",
-      name: "time",
-      message: "Time spent (i.e. 1h 15m) (optional):\n",
-      mapping: "#time",
-    },
-  ],
   allowCustomScopes: false,
   allowBreakingChanges: ["feat", "fix"],
 
